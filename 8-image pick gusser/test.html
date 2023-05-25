@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    display:flex;
+    justify-content : center;
+    align-items: center;
+    height: 97vh;
+}
+
+
+span {
+    font-size: 30px;
+    font-weight:bold;
+    position: relative;
+    left: 25px;
+    bottom: 13px;
+}
+
+img {
+    width: 150px;
+    margin:7px 0;
+}
+
+#test {
+    font-size: 20px;
+}
+.userchoice {
+    box-shadow: 1px 1px 10px green;
+    
+}
+    </style>
+</head>
+<body>
+    <div>
+    <div id="card">
+        <span>1</span>
+        <img id="cheeseburger" src="images/cheeseburger.png">
+        <span>2</span>
+        <img id="fries" src="images/fries.png">
+        <span>3</span>
+        <img id="hotdog"src="images/hotdog.png">  <br>
+        <span>4</span>
+        <img id="ice-cream" src="images/ice-cream.png">
+        <span>5</span>
+        <img id="milkshake" src="images/milkshake.png">
+        <span>6</span>
+        <img id="pizza" src="images/pizza.png">
+    </div>
+
+    <p id="result"></p>
+
+    <button id="1">1</button>
+    <button id="2">2</button>
+    <button id="3">3</button>
+    <button id="4">4</button>
+    <button id="5">5</button>
+    <button id="6">6</button>
+
+    <span id="result"></span>
+    <span id="decision"></span>
+</div>
+
+<script>
+    const cardArray = [
+    {
+        name: "cheeseburger",
+        image: "images/cheeseburger.png"
+    }
+    ,
+    {
+        name: "fries",
+        image: "images/fries.png"
+    }
+    ,
+    {
+        name: "hotdog",
+        image: "images/hotdog.png"
+    }
+    ,
+    {
+        name: "ice-cream",
+        image: "images/ice-cream.png"
+    }
+    ,
+    {
+        name: "milkshake",
+        image: "images/milkshake.png"
+    }
+    ,
+    {
+        name: "pizza",
+        image: "images/pizza.png"
+    }
+
+]
+
+
+var div = document.getElementById("div");
+var result = document.getElementById("result");
+var decision = document.getElementById("decision");
+var possiblechoices = document.querySelectorAll("button");
+var computechoice;
+var userchoice;
+
+possiblechoices.forEach(possiblechoice => possiblechoice.addEventListener("click", (e) => {
+    userchoice = e.target.id;
+    var userChoiceImgId;
+    
+    switch (userchoice) {
+        case "1":
+            userChoiceImgId = cardArray[0].name;
+            break;
+        case "2":
+            userChoiceImgId = cardArray[1].name;
+            break;
+        case "3":
+            userChoiceImgId = cardArray[2].name;
+            break;
+        case "4":
+            userChoiceImgId = cardArray[3].name;
+            break;
+        case "5":
+            userChoiceImgId = cardArray[4].name;
+            break;
+        case "6":
+            userChoiceImgId = cardArray[5].name;
+            break;
+    }
+
+
+    var userChoiceImg = document.getElementById(userChoiceImgId);
+    userChoiceImg.setAttribute("class", "userchoice");
+
+}))
+</script>
+</body>
+</html>

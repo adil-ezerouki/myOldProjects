@@ -1,0 +1,2 @@
+<span id="Monday">Monday</span> &nbsp; &nbsp; / <span id="Tuesday">Tuesday</span> &nbsp; &nbsp; / <span id="Wednesday"> Wednesday</span> &nbsp; &nbsp; / <span id="Thursday"> Thursday</span> &nbsp; &nbsp; /
+                <span id="Friday">Friday </span>

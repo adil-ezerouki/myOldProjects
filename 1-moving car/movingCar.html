@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    width: 500px;
+    margin: 100px auto;
+    background: #ccc;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+    background-color: rgb(198, 255, 151);
+  }
+
+  #car {
+    position: relative;
+    width: 212px;
+    top: 380px;
+    left: 75px;
+  }
+
+  .rect {
+    width: 150px;
+    height: 100px;
+    background: black;
+    position: relative;
+    z-index: 1;
+  }
+
+  .front {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background: black;
+    width: 60px;
+    height: 70px;
+    border-radius: 0 55px 0 0;
+    z-index: 1;
+  }
+
+  .hood {
+    width: 225px;
+    background: black;
+    height: 7px;
+    position: absolute;
+    left: -3px;
+    bottom: -2px;
+    border-radius: 3px;
+  }
+
+  .window {
+    position: absolute;
+    background: white;
+    width: 42px;
+    height: 15px;
+    border-radius: 0 15px 0 0;
+    padding-bottom: 10px;
+    top: 18px;
+    left: 7px;
+  }
+
+  .f_hood {
+    position: absolute;
+    background: black;
+    width: 68px;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+    bottom: -7px;
+  }
+
+  #wheel1 {
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 45%;
+    position: absolute;
+    border: 2px solid #ccc;
+    bottom: -15px;
+    z-index: 1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  #wheel2 {
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 45%;
+    position: absolute;
+    border: 2px solid #ccc;
+    bottom: -15px;
+    z-index: 1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  #wheel3 {
+    width: 30px;
+    height: 30px;
+    background: black;
+    border-radius: 45%;
+    position: absolute;
+    border: 2px solid #ccc;
+    bottom: -15px;
+    z-index: 1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    5% {
+      transform: rotate(18deg);
+    }
+
+    10% {
+      transform: rotate(36deg);
+    }
+
+    15% {
+      transform: rotate(54deg);
+    }
+
+    20% {
+      transform: rotate(72deg);
+    }
+
+    25% {
+      transform: rotate(90deg);
+    }
+
+    30% {
+      transform: rotate(108deg);
+    }
+
+    35% {
+      transform: rotate(126deg);
+    }
+
+    40% {
+      transform: rotate(144deg);
+    }
+
+    45% {
+      transform: rotate(162deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    55% {
+      transform: rotate(198deg);
+    }
+
+    60% {
+      transform: rotate(216deg);
+    }
+
+    65% {
+      transform: rotate(234deg);
+    }
+
+    70% {
+      transform: rotate(252deg);
+    }
+
+    75% {
+      transform: rotate(270deg);
+    }
+
+    80% {
+      transform: rotate(288deg);
+    }
+
+    85% {
+      transform: rotate(306deg);
+    }
+
+    90% {
+      transform: rotate(324deg);
+    }
+
+    95% {
+      transform: rotate(346deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  #wheel1 {
+    left: 10px;
+  }
+
+  #wheel2 {
+    left: 100px;
+  }
+
+  #wheel3 {
+    right: 10px;
+  }
+
+  #wheel1::after,
+  #wheel2::after,
+  #wheel3::after {
+    content: "";
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+  }
+
+  #road {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    border-radius: 30px;
+  }
+
+  button {
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-bottom: 15px;
+    display: block;
+    background-color: red;
+    color: #fff;
+    border: none;
+  }
+</style>
+
+<body id="body">
+  <div id="car">
+    <div class="rect"></div>
+    <div class="front">
+      <div class="window"></div>
+      <div class="f_hood"></div>
+    </div>
+    <div id="wheel1"></div>
+    <div id="wheel2"></div>
+    <div id="wheel3"></div>
+    <div class="hood"></div>
+  </div>
+  <button id="btn">Start the truck</button>
+  <button id="btn1">increase the speed</button>
+  <video id="road" src="road.mp4" autoplay loop></video>
+  <audio src="truck-engine-sound.mp3 " id="sound"></audio>
+
+  <script>
+    var wheel1 = document.getElementById("wheel1");
+    var wheel2 = document.getElementById("wheel2");
+    var wheel3 = document.getElementById("wheel3");
+    var road = document.getElementById("road");
+    var sound = document.getElementById("sound");
+    var btn = document.getElementById("btn");
+    var btn1 = document.getElementById("btn1");
+
+    
+    btn.addEventListener("click", function () {
+
+      if (wheel1.style.animationName == ""
+        && wheel2.style.animationName == ""
+        && wheel3.style.animationName == "") {
+
+        wheel1.style.animationName = "rotate";
+        wheel2.style.animationName = "rotate";
+        wheel3.style.animationName = "rotate";
+        road.style.backgroundImage = "url('road.mp4')"
+        road.play();
+        sound.play();
+        sound.volume = 0.30;
+        road.playbackRate = 4
+        btn.style.backgroundColor = "green";
+        btn.innerHTML = "Stop the truck";
+      } else if (btn.style.backgroundColor = "red") {
+        road.playbackRate = 4;
+        btn1.style.backgroundColor = "red";
+        btn1.innerHTML = "increase the speed";
+        road.pause();
+        sound.pause();
+        wheel1.style.animationName = "";
+        wheel2.style.animationName = "";
+        wheel3.style.animationName = "";
+        btn.innerHTML = "Start the truck";
+      } else {
+        wheel1.style.animationName = "";
+        wheel2.style.animationName = "";
+        wheel3.style.animationName = "";
+        road.style.backgroundImage = "url('road.mp4')"
+        btn.style.backgroundColor = "red";
+        btn.innerHTML = "Start the truck";
+        road.pause();
+        sound.pause();
+      }
+    });
+
+    btn1.addEventListener("click", function () {
+      if (btn.innerHTML == "Stop the truck") {
+        if (road.playbackRate == 1 || road.playbackRate == 4) {
+          road.playbackRate = 16;
+          btn1.style.backgroundColor = "green";
+          btn1.innerHTML = "decrease the speed";
+          sound.volume = 1;
+        } else {
+          road.playbackRate = 4;
+          btn1.style.backgroundColor = "red";
+          btn1.innerHTML = "increase the speed";
+          sound.volume = 0.30;
+        }
+      } else {
+        alert("you should first start the truck engine")
+      }
+    })
+  </script>
+</body>
+
+</html>

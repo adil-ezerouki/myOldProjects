@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: fit-content ;
+    overflow-x: hidden;
+}
+
+/* header */
+
+/* logo and nav */
+
+header {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #212529bb;
+    flex-wrap: wrap;
+}
+
+header video {
+    object-fit: cover;
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+
+#father-div1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #94999c38;
+    height: 13.5%;
+    position: relative;
+}
+
+header #nav-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #nav-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #nav-logo #logo a {
+    font-size: 33px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+}
+
+header #nav-logo nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #nav-logo nav ul {
+    margin-bottom: 0;
+}
+
+
+header #nav-logo nav a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 25px;
+}
+
+header #nav-logo nav a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 25px;
+}
+
+header #nav-logo nav #signup {
+    background-color: #F9735B;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+header #nav-logo nav li {
+    list-style-type: none;
+    display: flex;
+    display: inline
+}
+
+/* expression */
+
+header #expression {
+    height: 86%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+header #expression h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+header #expression h1 {
+    font-size: 80px;
+    font-weight: 900;
+    margin-bottom: 25px;
+}
+
+header #expression button {
+    background-color: #F9735B;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    margin-bottom: 25px;
+}
+
+/* choose program section */
+
+#choose-program {
+    height: 860px;
+    background-color: #fff;
+    width: 100%;
+}
+
+#choose-program #father-div2 {
+    width: 100%;
+    height: 860px;
+}
+
+#choose-program .section-heading {
+    text-align: center;
+    margin: 100px 300px;
+}
+
+.section-heading img,
+.section-heading h1,
+.section-heading p {
+    margin-bottom: 20px;
+}
+
+#choose-program .feature-item-container {
+    width: 550px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.feature-item .left-icon {
+    margin: 0 25px 60px 0;
+
+}
+
+.feature-item .right-content {
+    margin: 0 25px 68px 0;
+}
+
+.feature-item h2,
+.feature-item p,
+.feature-item a {
+    margin: 7px;
+}
+
+.right-content h2 {
+    font-size: 20px;
+}
+
+.right-content a {
+    text-decoration: none;
+    color: #F9735B;
+    font-size: 13px;
+}
+
+.right-content a:hover {
+    color: #F9735B;
+}
+
+/* call to actition section */
+
+#call-to-actition {
+    height: fit-content;
+    position: relative;
+}
+
+#call-to-actition img {
+    top: 0;
+    left: 0;
+}
+
+#call-to-actition div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 60%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#call-to-actition h1 {
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+#call-to-actition button {
+    background-color: #F9735B;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+
+/* classes section */
+
+#classes {
+    height: 860px;
+    background-color: #fff;
+    width: 100%;
+}
+
+#classes #father-div3 {
+    width: 1200px;
+    height: 860px;
+}
+
+#classes .section-heading {
+    text-align: center;
+    margin: 100px 300px;
+}
+
+#classes .buttons,
+#classes .class-explanations-container {
+    position: absolute;
+}
+
+#classes .buttons {
+    width: 400px;
+}
+
+#classes .buttons div {
+    padding: 30px 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 16px 10px #8888882a;
+    margin: 0 0 39.5px 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px ;
+}
+
+#classes .buttons button {
+    background-color: #fff;
+    border: none;
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+#classes .class-explanations-container {
+    width: 620px;
+    left: 43%;
+}
+
+.class-explanation {
+    width: 100%;
+}
+
+.class-explanation img {
+    width: 100% ;
+    height: 265px;
+    margin-bottom: 28px;
+    border-radius: 10px;
+}
+
+.class-explanation h1 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 5px;
+}
+
+
+.class-explanation p {
+    color: #7a7a7a;
+    margin-bottom: 27px;
+    font-size: 14px;
+}
+
+.class-explanation button {
+    background-color: #F9735B;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+}
+
+#class-explanation1 {
+    z-index: 4;
+    background-color: #fff;
+}
+
+#class-explanation2 {
+    position: relative;
+    bottom: 497px;
+    z-index: -1;
+    background-color: #fff;
+}
+
+#class-explanation2 img {
+    height: 263px;
+}
+#class-explanation3 {
+    position: relative;
+    bottom: 992px;
+    z-index: -1;
+    background-color: #fff;
+}
+#class-explanation4 {
+    position: relative;
+    bottom: 1489px;
+    z-index: -1;
+    background-color: #fff;
+}
+
+/* schedule section */
+
+#schedule {
+    position: relative;
+}
+
+#schedule #father-div4 {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top:120px;
+    height: 70%;
+    text-align: center;
+    color:#fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#schedule .section-heading {
+    margin-bottom: 70px ;
+    padding: 0 120px;
+}
+
+#schedule #days {
+    margin-bottom: 30px ;
+}
+
+#schedule #days button {
+    margin-left: 10px ;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+#schedule #days button:hover {
+    color: #F9735B;
+}
+
+#schedule #days #Monday {
+    color:#F9735B
+}
+
+table
+
+table,table tr, table td, table th {
+    border: solid 1px #fff;
+    /* padding: 35px 100px; */
+    width: 300px;
+    height: 90px;
+    font-size: 15px ;
+    font-weight: 400;
+}
+
+table td:nth-child(4) {
+    font-weight: 700;
+}
+
+table th {
+    font-weight: 700;
+}
+
+/* trainers section */ 
+
+#trainers {
+
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+#trainers .section-heading div {
+     padding: 0 400px;
+     margin-bottom: 70px;
+}
+
+#trainers-container {
+    display: flex;
+}
+
+.trainer {
+    width: 350px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    padding: 30px;
+    box-shadow: 0px 0px 16px 10px #8888882a;
+    border-radius: 15px;
+
+}
+
+.trainer div {
+    width: 100%;
+    text-align: center;
+}
+
+.trainer div h2 {
+    color: #F9735B;
+    font-size: 15px;
+    margin-top: 20px ;
+}
+
+.trainer div h1 {
+    font-size: 23px;
+}
+
+.trainer img {
+    border-radius: 15px;
+    width: 290px;
+    height: 220px ;
+    transition: transform .4s;
+    top: 0;
+    backface-visibility: hidden;
+    opacity: 0.7;
+}
+
+.trainer img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.trainer i {
+    margin: 0 20px ;
+    transition: transform 0.5s;
+}
+
+.trainer div i {
+    color: #F9735B;
+}
+
+.trainer .fa-facebook-f:hover {
+    color: 	#4267B2;
+    transform: scale(1.5)
+}
+
+.trainer .fa-twitter:hover {
+    color: 	#00acee;
+    transform: scale(1.5)
+}
+
+.trainer .fa-linkedin-in:hover {
+    color: 	#0072b1;
+    transform: scale(1.5)
+}
+
+.trainer .fa-behance:hover {
+    color: 	#053eff;
+    transform: scale(1.5)
+}

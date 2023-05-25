@@ -1,0 +1,74 @@
+body {
+    display:flex;
+    justify-content : center;
+    overflow-y: hidden;
+    align-items: center;
+    height: 97vh;
+}
+
+
+span {
+    font-size: 25px;
+    font-weight:bold;
+    position: relative;
+    left: 32px;
+    bottom: 20px;
+}
+
+p {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+}
+
+img {
+    width: 110px;
+    margin:14px 7px;
+}
+
+#test {
+    font-size: 20px;
+}
+
+.computechoice {
+    box-shadow: 1px 1px 30px red;
+    border-radius: 22px;
+    
+}
+.userchoice {
+    box-shadow: 1px 1px 30px blue;
+    border-radius: 22px;
+    
+}
+
+.samechoice {
+    box-shadow: 1px 1px 30px green;
+    border-radius: 22px;
+}
+
+.resetclass {
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+#buttons {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: solid 1px #fff ;
+    font-size: 20px;
+    margin: 0 5px;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 255, 0);
+    border: solid 1px rgb(0, 0, 255) ;
+}

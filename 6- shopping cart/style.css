@@ -1,0 +1,85 @@
+body {
+    display:flex;
+    justify-content : center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: center;
+}
+
+.item {
+    background-color: aqua;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+img {
+    width: 200px;
+    height: 250px;
+}
+
+.name , .price {
+    text-align: center;
+    font-size: 25px;
+}
+
+.price {
+    color: brown;
+}
+button {
+    margin: 0 80px;
+    background-color: blueviolet;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+button:active {
+    background-color: rgba(137, 43, 226, 0.39);
+    color: #000;
+}
+
+#parentStore {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+table tr, td,th {
+    font-size: 20px;
+    padding: 10px 20px;
+    font-size: center;
+    bor
+}
+
+th {
+    background-color: aqua;
+    border : solid 1px #888;
+}
+
+caption {
+    font-size: 20px;
+    margin-bottom: 17px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left : 420px;
+    width: 500px
+}
+
+#empty {
+    border: none;
+}
+
+table img {
+    width: 70px;
+    height: auto;
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(51, 51, 51, 0.295);
+}

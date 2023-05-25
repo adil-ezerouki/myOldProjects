@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory card</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="parentDiv">
+        <h1>Phone store</h1>
+        <div id="parentStore">
+
+            <div class="item">
+                <img src="images/1.jpg" alt="">
+                <p class="name">Remdi Note 10 Pro</p>
+                <p class="price">3000 DH</p>
+                <button class="btn redmi">Add to cart</button>
+            </div>
+
+            <div class="item">
+                <img src="images/2.png" alt="">
+                <p class="name"> Galaxy Ultra S22</p>
+                <p class="price">8000 DH</p>
+                <button class="btn galaxy">Add to cart</button>
+            </div>
+
+            <div class="item">
+                <img src="images/3.png" alt="">
+                <p class="name">Iphone 13</p>
+                <p class="price"> 14 600 DH</p>
+                <button class="btn iphone">Add to cart</button>
+            </div>
+
+            <div class="item">
+                <img src="images/4.png" alt="">
+                <p class="name">Oppo Reno 6</p>
+                <p class="price">2500 DH</p>
+                <button class="btn oppo">Add to cart</button>
+            </div>
+
+            <div class="item">
+                <img src="images/5.jpg" alt="">
+                <p class="name">Tecno spark 4</p>
+                <p class="price">1800 DH</p>
+                <button class="btn tecno">Add to cart</button>
+            </div>
+
+            <div class="item">
+                <img src="images/6.png" alt="">
+                <p class="name">Realme Note 8</p>
+                <p class="price">2800 DH</p>
+                <button class="btn realme">Add to cart</button>
+            </div>
+        </div>
+        <div id="shoppingCart">
+            <table>
+                <caption>shopping cart</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>picture</th>
+                        <th>price</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td id="empty"></td>
+                        <td>total</td>
+                        <td id="total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="file.js"></script>
+</body>
+
+</html>

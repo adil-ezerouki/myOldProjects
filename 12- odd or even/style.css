@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    text-align: center;
+    font-size: 30px;
+}
+
+div {
+    max-height: 150px ;
+}
+
+#err {
+    color: red;
+}
+
+input {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+}

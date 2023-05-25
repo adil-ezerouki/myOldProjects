@@ -1,0 +1,30 @@
+body {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+img {
+    width: 600px;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 215px
+}
+
+button {
+    background-color: #000;
+    color:#fff;
+    padding: 10px 40px;
+    font-size: 20px;
+}
+
+button:active {
+    background-color: #fff;
+    color:#000;
+}
